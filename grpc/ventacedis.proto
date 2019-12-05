@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package ventas_cedis;
+
+message Response {
+    bool value = 1;
+}
+
+message Params {
+    bool value = 1;
+}
+
+service db {
+    rpc dbData(Params) returns (Response) {}
+}
