@@ -5,8 +5,8 @@ import ventacedis_pb2 as ventacedis__pb2
 
 
 class dbStub(object):
-  # missing associated documentation comment in .proto file
-  pass
+  """service nos proporciona las funciones/variables para configurar el servidor y el cliente
+  """
 
   def __init__(self, channel):
     """Constructor.
@@ -22,8 +22,8 @@ class dbStub(object):
 
 
 class dbServicer(object):
-  # missing associated documentation comment in .proto file
-  pass
+  """service nos proporciona las funciones/variables para configurar el servidor y el cliente
+  """
 
   def dbData(self, request, context):
     # missing associated documentation comment in .proto file

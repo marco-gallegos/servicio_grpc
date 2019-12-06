@@ -1,7 +1,17 @@
+/*
+ * @autor Marco A. Gallegos
+ * @date 5/12/2019
+ * @descripcion este archivo describe nuestro servicio, es decir variables y funciones a exponer en nuestro servidor grpc
+ * y a usar en nuestro cliente, este archivo lo debe tener el cliente
+ *
+*/
+// definimos la version de proto a usar es tomada por el transpilador
 syntax="proto3";
 
+// para agruparlas ??? no se aun bro u.u
 package ventas_cedis;
 
+// message nos creara contructores para usarlas como variables en el cliente
 message Response {
     bool value = 1;
 }
@@ -10,6 +20,7 @@ message Params {
     bool value = 1;
 }
 
+// service nos proporciona las funciones/variables para configurar el servidor y el cliente
 service db {
     rpc dbData(Params) returns (Response) {}
 }

@@ -1,3 +1,9 @@
+"""
+@autor Marco A. Gallegos
+@date 2019/12/05
+@descripcion ejemplo de como consumir el servicio grpc
+"""
+
 from __future__ import print_function
 import logging
 

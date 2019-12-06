@@ -1,3 +1,8 @@
+"""
+@autor Marco A. Gallegos
+@date 2019/12/05
+@descripcion importa los modulos/endpoints para levangtar el servidcio de grpc
+"""
 
 import ventacedis_pb2
 import ventacedis_pb2_grpc
@@ -11,7 +16,8 @@ import db_service as dbs
 
 
 class Greeter(ventacedis_pb2_grpc.dbServicer):
-
+    """Esta clase engloba las funciones que se pueden llamar la funcion debe tener el mismo nombre que la funcion
+    en el archivo rpoto"""
     def dbData(self, request, context):
         #return helloworld_pb2.HelloReply(message='Hello, %s!' % request.name)
         response = ventacedis_pb2.Response(value=False)
